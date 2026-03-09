@@ -2,10 +2,7 @@
 # Voltea Énergie — Configuration Apache / Passenger (Plesk)
 # ═══════════════════════════════════════════════════════════════
 
-# ─── Passenger Node.js ──────────────────────────────────────
-PassengerEnabled On
-PassengerStartupFile app.js
-PassengerAppType node
+# Note : Passenger est configuré via l'interface Plesk, pas ici.
 
 # ─── Blocage des fichiers sensibles ─────────────────────────
 <FilesMatch "^(\.env.*|.*\.config\.js|config\.json|.*\.log|.*\.sql|.*\.sqlite|.*\.db|package\.json|package-lock\.json|yarn\.lock|Makefile|Dockerfile|.*\.md)$">
