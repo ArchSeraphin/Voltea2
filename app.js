@@ -20,6 +20,9 @@ const contactRoutes = require('./server/routes/contact');
 
 const app = express();
 
+// Plesk utilise Apache en reverse proxy devant Node — requis pour rate-limit et req.ip
+app.set('trust proxy', 1);
+
 // ─── Security Headers ────────────────────────────────────────────────────────
 app.use(helmet({
   contentSecurityPolicy: {
@@ -88,13 +91,8 @@ app.use((err, req, res, next) => {
 });
 
 // ─── Start ───────────────────────────────────────────────────────────────────
+// Toujours écouter — Passenger proxy vers ce port via $PORT
 const PORT = process.env.PORT || 3000;
-
-if (require.main === module) {
-  app.listen(PORT, () => {
-    console.log(`Voltea Énergie — serveur démarré sur le port ${PORT} [${process.env.NODE_ENV || 'development'}]`);
-  });
-}
-
-// Passenger compatibility
-module.exports = app;
+app.listen(PORT, () => {
+  console.log(`Voltea Énergie — port ${PORT} [${process.env.NODE_ENV || 'development'}]`);
+});
