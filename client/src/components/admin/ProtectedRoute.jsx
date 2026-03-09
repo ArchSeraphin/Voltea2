@@ -1,0 +1,15 @@
+import { Navigate } from 'react-router-dom';
+import { useAuth } from '../../context/AuthContext.jsx';
+
+export default function ProtectedRoute({ children }) {
+  const { admin, loading } = useAuth();
+
+  if (loading) return (
+    <div style={{ minHeight: '100vh', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+      <div className="spinner" style={{ width: 48, height: 48 }} />
+    </div>
+  );
+
+  if (!admin) return <Navigate to="/admin/login" replace />;
+  return children;
+}

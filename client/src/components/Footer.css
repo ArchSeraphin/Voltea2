@@ -1,0 +1,157 @@
+.footer {
+  background: var(--c-navy);
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.footer__top {
+  padding: 72px 0 48px;
+}
+
+.footer__grid {
+  display: grid;
+  grid-template-columns: 1.6fr 1fr 1fr 1fr;
+  gap: 48px;
+}
+
+.footer__brand img {
+  height: 44px;
+  width: auto;
+  margin-bottom: 20px;
+}
+
+.footer__brand-fallback {
+  font-family: var(--f-heading);
+  font-size: 1.25rem;
+  color: var(--c-white);
+  margin-bottom: 20px;
+  display: block;
+}
+
+.footer__tagline {
+  font-size: 0.9rem;
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.55);
+  margin-bottom: 24px;
+  max-width: 300px;
+}
+
+.footer__social {
+  display: flex;
+  gap: 12px;
+}
+
+.footer__social a {
+  width: 36px;
+  height: 36px;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgba(255, 255, 255, 0.6);
+  transition: all var(--transition);
+}
+
+.footer__social a:hover {
+  background: var(--c-primary);
+  border-color: var(--c-primary);
+  color: var(--c-white);
+}
+
+.footer__heading {
+  font-family: var(--f-heading);
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--c-white);
+  margin-bottom: 20px;
+}
+
+.footer__links {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer__links a {
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.55);
+  transition: color var(--transition);
+}
+
+.footer__links a:hover {
+  color: var(--c-white);
+  padding-left: 4px;
+}
+
+.footer__contact-list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.footer__contact-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.55);
+}
+
+.footer__contact-list svg {
+  flex-shrink: 0;
+  margin-top: 1px;
+  color: var(--c-primary-light);
+}
+
+.footer__contact-list a {
+  color: rgba(255, 255, 255, 0.55);
+  transition: color var(--transition);
+}
+
+.footer__contact-list a:hover {
+  color: var(--c-white);
+}
+
+.footer__bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  padding: 20px 0;
+}
+
+.footer__bottom .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.footer__bottom p {
+  font-size: 0.82rem;
+  color: rgba(255, 255, 255, 0.35);
+}
+
+.footer__bottom-links {
+  display: flex;
+  gap: 20px;
+}
+
+.footer__bottom-links a {
+  font-size: 0.82rem;
+  color: rgba(255, 255, 255, 0.35);
+  transition: color var(--transition);
+}
+
+.footer__bottom-links a:hover {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+@media (max-width: 1024px) {
+  .footer__grid { grid-template-columns: 1fr 1fr; gap: 32px; }
+}
+
+@media (max-width: 600px) {
+  .footer__grid { grid-template-columns: 1fr; gap: 32px; }
+  .footer__top { padding: 48px 0 32px; }
+}
