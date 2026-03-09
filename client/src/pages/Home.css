@@ -71,7 +71,7 @@
 }
 
 .hero__title-accent {
-  background: linear-gradient(90deg, var(--c-primary-light), var(--c-gold));
+  background: linear-gradient(90deg, var(--c-primary-light), var(--c-accent));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -161,7 +161,7 @@
 }
 
 .service-card {
-  background: var(--c-white);
+  background: var(--c-surface);
   border: 1px solid var(--c-border);
   border-radius: var(--radius-lg);
   padding: 32px 28px;
@@ -182,7 +182,7 @@
   left: 0;
   right: 0;
   height: 3px;
-  background: linear-gradient(90deg, var(--c-primary), var(--c-gold));
+  background: linear-gradient(90deg, var(--c-primary), var(--c-accent));
   transform: scaleX(0);
   transition: transform var(--transition);
   transform-origin: left;
@@ -280,7 +280,7 @@
   font-family: var(--f-heading);
   font-size: 3.5rem;
   font-weight: 800;
-  color: var(--c-gold);
+  color: var(--c-accent);
   display: block;
 }
 
@@ -302,7 +302,7 @@
 .why-card {
   text-align: center;
   padding: 36px 24px;
-  background: var(--c-white);
+  background: var(--c-surface);
   border: 1px solid var(--c-border);
   border-radius: var(--radius-lg);
   transition: transform var(--transition), box-shadow var(--transition);

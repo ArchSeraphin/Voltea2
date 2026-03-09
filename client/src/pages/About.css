@@ -124,7 +124,7 @@
 
 .value-card {
   padding: 32px;
-  background: var(--c-white);
+  background: var(--c-surface);
   border: 1px solid var(--c-border);
   border-radius: var(--radius-lg);
   transition: transform var(--transition), box-shadow var(--transition);

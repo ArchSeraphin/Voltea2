@@ -75,8 +75,8 @@ export default function Collectivites() {
       <section className="section section-dark">
         <div className="container">
           <div className="section-header reveal" style={{ textAlign: 'center', alignItems: 'center', display: 'flex', flexDirection: 'column' }}>
-            <span className="section-eyebrow" style={{ color: 'var(--c-gold)' }}>
-              <span style={{ background: 'var(--c-gold)' }} />
+            <span className="section-eyebrow" style={{ color: 'var(--c-accent)' }}>
+              <span style={{ background: 'var(--c-accent)' }} />
               Pourquoi Voltea
             </span>
             <h2 className="section-title light">Des avantages concrets<br />pour votre collectivité</h2>
@@ -125,7 +125,7 @@ export default function Collectivites() {
             <p style={{ color: 'rgba(255,255,255,0.65)', marginBottom: 32 }}>
               Demandez une étude gratuite et sans engagement pour votre collectivité.
             </p>
-            <Link to="/contact" className="btn btn-gold btn-lg">Demander une étude</Link>
+            <Link to="/contact" className="btn btn-outline btn-lg">Demander une étude</Link>
           </div>
         </div>
       </section>

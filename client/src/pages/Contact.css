@@ -61,7 +61,7 @@
 
 /* Form */
 .contact-form-wrap {
-  background: var(--c-white);
+  background: var(--c-surface);
   border: 1px solid var(--c-border);
   border-radius: var(--radius-xl);
   padding: 48px;

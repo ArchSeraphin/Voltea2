@@ -193,13 +193,13 @@ export default function Home() {
         <div className="container">
           <div className="home-collectivites__inner">
             <div className="home-collectivites__content reveal">
-              <span className="section-eyebrow" style={{ color: 'var(--c-gold)' }}>
-                <span style={{ background: 'var(--c-gold)' }} />
+              <span className="section-eyebrow" style={{ color: 'var(--c-accent)' }}>
+                <span style={{ background: 'var(--c-accent)' }} />
                 Offre spécifique
               </span>
               <h2 className="section-title light">
                 Solutions dédiées aux <br />
-                <span style={{ color: 'var(--c-gold)' }}>collectivités territoriales</span>
+                <span style={{ color: 'var(--c-accent)' }}>collectivités territoriales</span>
               </h2>
               <p className="section-subtitle" style={{ color: 'rgba(255,255,255,0.7)' }}>
                 Communes, intercommunalités, régions, établissements publics : nous maîtrisons
@@ -211,7 +211,7 @@ export default function Home() {
                 <li>✓ Groupements de commandes</li>
                 <li>✓ Reporting adapté aux contraintes administratives</li>
               </ul>
-              <Link to="/collectivites" className="btn btn-gold btn-lg" style={{ marginTop: 8 }}>
+              <Link to="/collectivites" className="btn btn-primary btn-lg" style={{ marginTop: 8 }}>
                 En savoir plus
               </Link>
             </div>
